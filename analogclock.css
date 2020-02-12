@@ -3,11 +3,7 @@
       width:400px;
     /*   margin-left:100px */
     }
-    #hh,#mh, #sh,#center{
-      position:absolute;
-      /* transform-origin:bottom; */
-    /*   margin-left:100px; */
-    }
+    
     #hh{
       background-color:transparent;
       /* width:10px;
@@ -20,14 +16,14 @@
     }
     #mh{
       background-color:transparent;
-      width:40%;
+      /* width:40%; */
       border-radius:8px;
       /* z-index:10; */
     /*   display:none; */
     }
     #sh{
       background-color:transparent;
-      width:40%; 
+      /* width:40%;  */
       border-radius:8px;
       /* z-index: inherit 0; */
     }
@@ -59,7 +55,8 @@ body{
     /* background-color: whitesmoke; */
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-77px);
+    transform: translateY(-78px);
+    /* transform: translateX(1px); */
 
 }
 #clock-face{
@@ -68,9 +65,10 @@ body{
     height:100%;
     /* background-color: red; */
     transform: translateY(-3px);
-    -webkit-box-reflect: below 70px;
+    transform: rotate(90deg);
+    /* -webkit-box-reflect: below 70px; */
     /* -webkit-box-reflect: below 8px ; */
-    -webkit-gradient:(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+    /* -webkit-gradient:(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1))); */
 
     
     /* margin-left:50%; */
@@ -86,8 +84,9 @@ body{
     transform-origin: 100%;
     border: 1px solid rgb(253, 98, 240);
     box-shadow: 0 0 5px 2px rgb(252, 135, 242);
+    /* transform: rotate(270deg); */
     
 }
 
 /* -webkit-box-reflect: below 10px; */
--webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+/* -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1))); */

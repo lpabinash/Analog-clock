@@ -8,10 +8,13 @@
 </head>
 <body>
     <script>
+         setInterval(adjustclock,1000);
         var d,s,m,h,hdeg
       function adjustclock(){
         d=new Date();
+        console.log(d);
         h=d.getHours();
+        // console.log(h);
         m=d.getMinutes();
         s=d.getSeconds();
         hdeg=h*30 + m/2;
@@ -19,9 +22,9 @@
        sh.style.transform="rotate("+s*6+"deg)";
         mh.style.transform="rotate("+m*6+"deg)";
       }
-      window.addEventListener("load",function(){
-        setInterval(adjustclock,1000);
-      })
+    //   window.addEventListener("load",function(){
+    //     setInterval(adjustclock,1000);
+    //   })
       </script>
       <div id="analog">
           <div id="clock-face">
