@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="analogclock.css">
+</head>
+<body>
+    <script>
+        var d,s,m,h,hdeg
+      function adjustclock(){
+        d=new Date();
+        h=d.getHours();
+        m=d.getMinutes();
+        s=d.getSeconds();
+        hdeg=h*30 + m/2;
+        hh.style.transform="rotate("+hdeg+"deg)";
+       sh.style.transform="rotate("+s*6+"deg)";
+        mh.style.transform="rotate("+m*6+"deg)";
+      }
+      window.addEventListener("load",function(){
+        setInterval(adjustclock,1000);
+      })
+      </script>
+      <div id="analog">
+      <img id="clock" src="https://image.freepik.com/free-photo/face-printable-clock_121-42809.jpg"/>
+      <div id="hh"></div>
+      <div id="mh"></div>
+      <div id="sh"></div>
+      <div id="center"></div>
+      </div>
+      
+      
+</body>
+</html>
