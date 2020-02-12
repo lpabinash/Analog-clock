@@ -5,46 +5,89 @@
     }
     #hh,#mh, #sh,#center{
       position:absolute;
-      transform-origin:bottom;
+      /* transform-origin:bottom; */
     /*   margin-left:100px; */
     }
     #hh{
-      background-color:black;
-      width:10px;
-      height:120px;
-      top:89px;
-      left:203px;
+      background-color:transparent;
+      /* width:10px;
+      height:120px; */
+      /* top:89px; */
+      /* left:203px; */
       border-radius:8px;
-      z-index:1
-      display:hidden;
+      /* z-index:1 */
+      /* display:hidden; */
     }
     #mh{
-      background-color:teal;
-      width:10px;
-      height:150px;
-      top:60px;
-      left:203px;
+      background-color:transparent;
+      width:40%;
       border-radius:8px;
-      z-index:0;
+      /* z-index:10; */
     /*   display:none; */
     }
     #sh{
-      background-color:cyan;
-      width:3px;
-      height:170px;
-      top:39px;
-      left:206.5px;
+      background-color:transparent;
+      width:40%; 
       border-radius:8px;
-      z-index: inherit 0;
+      /* z-index: inherit 0; */
     }
     
 #center{
     height:20px;
     width:20px;
-    background-color: black;
-    top:200px;
-    left:200px;
+    background-color: transparent;
+    /* top:200px; */
+    /* left:200px; */
     z-index: 0;
     border-radius: 50%;
 
 }    
+body{
+    margin:0px;
+    background: url('https://i.imgur.com/stacxrL.jpg');
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+#analog{
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+    position:relative;
+    border:10px solid transparent;
+    /* background-color: whitesmoke; */
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-77px);
+
+}
+#clock-face{
+    position: relative;
+    width:100%;
+    height:100%;
+    /* background-color: red; */
+    transform: translateY(-3px);
+    -webkit-box-reflect: below 70px;
+    /* -webkit-box-reflect: below 8px ; */
+    -webkit-gradient:(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+
+    
+    /* margin-left:50%; */
+
+
+}
+.hand{
+    top:50%;
+    left:10%;
+    position: absolute;
+    width:40%;
+    height:6px;
+    transform-origin: 100%;
+    border: 1px solid rgb(253, 98, 240);
+    box-shadow: 0 0 5px 2px rgb(252, 135, 242);
+    
+}
+
+/* -webkit-box-reflect: below 10px; */
+-webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
